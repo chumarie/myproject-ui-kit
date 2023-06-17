@@ -10,10 +10,10 @@ const meta = {
 		// More on how to position stories at: https://storybook.js.org/docs/svelte/configure/story-layout
 		layout: 'fullscreen'
 	}
-} satisfies Meta<Page>;
+} as Meta;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj;
 
 export const LoggedOut: Story = {};
 

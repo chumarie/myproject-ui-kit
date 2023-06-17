@@ -8,27 +8,26 @@ export default {
 	component: Button,
 	tags: ['autodocs'],
 	argTypes: {
-		backgroundColor: { control: 'color' },
+		backgroundColor: {
+			control: { type: 'select' },
+			options: ['primary', 'secondary', 'success', 'grey']
+		},
 		size: {
 			control: { type: 'select' },
 			options: ['small', 'medium', 'large']
-		}
+		},
+		opacity: { control: 'number' }
 	}
 } as Meta;
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj;
 
 // More on writing stories with args: https://storybook.js.org/docs/svelte/writing-stories/args
-export const Primary: Story = {
-	args: {
-		primary: true,
-		label: 'Button'
-	}
-};
 
 export const Secondary: Story = {
 	args: {
-		label: 'Button'
+		label: 'Button',
+		backgroundColor: 'secondary'
 	}
 };
 

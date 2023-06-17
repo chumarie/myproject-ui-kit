@@ -29,7 +29,9 @@ const tailwindPlugin = plugin(
 					fugaz: ['Fugaz One', 'sans-serif']
 				},
 				colors: {
-					brand: { DEFAULT: '#ff0068' }
+					primary: { DEFAULT: '#8883D6' },
+					secondary: { DEFAULT: '#111821' },
+					success: { DEFAULT: '#0BAA60' }
 				},
 				borderWidth: {
 					DEFAULT: '2px'

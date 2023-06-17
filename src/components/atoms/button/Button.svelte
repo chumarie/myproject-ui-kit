@@ -1,20 +1,21 @@
 <script lang="ts">
-	export let primary = false;
-	export let backgroundColor: string | undefined = undefined;
-	export let size: 'small' | 'medium' | 'large' = 'medium';
-	export let label: string = '';
+	//import './button.css';
 
-	$: mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-	$: style = backgroundColor ? `background-color: ${backgroundColor}` : '';
+	export let backgroundColor: 'primary' | 'secondary' | 'success' = 'primary';
+	export let size: 'small' | 'medium' | 'large' = 'medium';
+
+	export let label = '';
+	//export let opacity: number | undefined = 1;
 </script>
 
-<div class="text-4xl">
-	<button
-		type="button"
-		class={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-		on:click
-		{style}
-	>
-		<span class="underline">{label}</span>
-	</button>
-</div>
+<button
+	type="button"
+	class={[
+		'rounded-md text-white capitalize py-3 px-8 text-base leading-6',
+		`storybook-button--${size}`,
+		`bg-${backgroundColor}`
+	].join(' ')}
+	on:click
+>
+	{label}
+</button>
