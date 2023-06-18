@@ -11,10 +11,11 @@
 <button
 	type="button"
 	class={clsx(
-		'rounded-md capitalize py-3 px-8 text-base leading-6',
+		'rounded-md text-white capitalize py-3 px-8 text-base leading-6',
 		`storybook-button--${size}`,
-		backgroundColor === 'primary' && 'bg-primary text-secondary',
-		backgroundColor === 'secondary' && 'bg-secondary'
+		backgroundColor === 'primary' && 'bg-primary',
+		backgroundColor === 'secondary' && 'bg-secondary',
+		backgroundColor === 'success' && 'bg-success'
 	)}
 	on:click
 >

@@ -12,11 +12,11 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
-			'@atoms': path.resolve(__dirname, './src/components/atoms'),
-			'@molecules': path.resolve(__dirname, './src/components/molecules'),
-			'@organisms': path.resolve(__dirname, './src/components/organisms'),
-			'@templates': path.resolve(__dirname, './src/components/templates'),
-			'@pages': path.resolve(__dirname, './src/components/pages')
+			'@ui/atoms': path.resolve(__dirname, './src/components/atoms'),
+			'@ui/molecules': path.resolve(__dirname, './src/components/molecules'),
+			'@ui/organisms': path.resolve(__dirname, './src/components/organisms'),
+			'@ui/templates': path.resolve(__dirname, './src/components/templates'),
+			'@ui/pages': path.resolve(__dirname, './src/components/pages')
 		}
 	}
 });

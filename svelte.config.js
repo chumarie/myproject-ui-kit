@@ -13,11 +13,11 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 		alias: {
-			'@atoms/*': 'src/components/atoms/*',
-			'@molecules/*': 'src/components/molecules/*',
-			'@organisms/*': 'src/components/organisms/*',
-			'@templates/*': 'src/components/templates/*',
-			'@pages/*': 'src/components/pages/*'
+			'@ui/atoms/*': 'src/components/atoms/*',
+			'@ui/molecules/*': 'src/components/molecules/*',
+			'@ui/organisms/*': 'src/components/organisms/*',
+			'@ui/templates/*': 'src/components/templates/*',
+			'@ui/pages/*': 'src/components/pages/*'
 		}
 	}
 };

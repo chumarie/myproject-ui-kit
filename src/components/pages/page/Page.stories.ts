@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
 import { within, userEvent } from '@storybook/testing-library';
 
-import Page from '@molecules/header/Header.svelte';
+import Page from '@ui/pages/page/Page.svelte';
 
 const meta = {
 	title: 'Example/Page',

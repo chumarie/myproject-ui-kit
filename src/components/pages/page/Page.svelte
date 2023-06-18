@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './page.css';
-	import Header from '@molecules/header/Header.svelte';
+	import Header from '@ui/molecules/header/Header.svelte';
 
 	let user: { name: string } | null = null;
 </script>
