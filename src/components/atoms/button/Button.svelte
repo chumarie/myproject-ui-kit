@@ -1,5 +1,5 @@
 <script lang="ts">
-	//import './button.css';
+	import clsx from 'clsx';
 
 	export let backgroundColor: 'primary' | 'secondary' | 'success' = 'primary';
 	export let size: 'small' | 'medium' | 'large' = 'medium';
@@ -10,11 +10,12 @@
 
 <button
 	type="button"
-	class={[
-		'rounded-md text-white capitalize py-3 px-8 text-base leading-6',
+	class={clsx(
+		'rounded-md capitalize py-3 px-8 text-base leading-6',
 		`storybook-button--${size}`,
-		`bg-${backgroundColor}`
-	].join(' ')}
+		backgroundColor === 'primary' && 'bg-primary text-secondary',
+		backgroundColor === 'secondary' && 'bg-secondary'
+	)}
 	on:click
 >
 	{label}

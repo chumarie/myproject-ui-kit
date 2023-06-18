@@ -52,7 +52,7 @@ const tailwindPlugin = plugin(
 );
 
 module.exports = {
-	purge: ['./src/components/**/**/*.svelte', './src/*.html'],
+	// purge: ['./src/components/**/**/*.svelte', './src/*.html'],
 	content: ['./index.html', './src/components/**/**/*.{js,ts,jsx,tsx}'],
 	plugins: [tailwindPlugin]
 };
