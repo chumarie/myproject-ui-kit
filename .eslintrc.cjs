@@ -28,8 +28,13 @@ module.exports = {
 		}
 	],
 	rules: {
-		'no-console': 'warn'
-		// place to specify ESLint rules
-		// e.g. "@typescript-eslint/explicit-function-return-type": "off",
+		'linebreak-style': ['error', 'unix'],
+		quotes: ['error', 'single'],
+		semi: ['error', 'always'],
+		'no-trailing-spaces': 'error',
+		'prefer-const': 'error',
+		'no-unused-vars': 'error',
+		'no-console': 'error',
+		'prefer-template': 'error'
 	}
 };
