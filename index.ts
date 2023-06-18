@@ -1,1 +1,2 @@
-export { default as Button } from './src/components/atoms/button/Button.svelte';
+export * from './src/components/atoms';
+export * from './src/components/molecules';
