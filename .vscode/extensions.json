@@ -1,0 +1,15 @@
+{
+	"recommendations": [
+		"aaron-bond.better-comments",
+		"svelte.svelte-vscode",
+		"ardenivanov.svelte-intellisense",
+		"Huuums.vscode-fast-folder-structure",
+		"fivethree.vscode-svelte-snippets",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"rvest.vs-code-prettier-eslint",
+		"ms-vscode.vscode-typescript-tslint-plugin",
+		"bradlc.vscode-tailwindcss",
+		"emmanuelbeziat.vscode-great-icons"
+	]
+}
