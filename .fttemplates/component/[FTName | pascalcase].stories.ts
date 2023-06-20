@@ -1,47 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
 
-import Button from './<FTName | pascalcase>.svelte';
+import <FTName | pascalcase> from './<FTName | pascalcase>.svelte';
 
-// More on how to set up stories at: https://storybook.js.org/docs/svelte/writing-stories/introduction
 const meta = {
-	title: 'Example/Button',
-	component: Button,
+	title: 'Example/<FTName | pascalcase>',
+	component: <FTName | pascalcase>,
 	tags: ['autodocs'],
 	argTypes: {
-		backgroundColor: { control: 'color' },
-		size: {
-			control: { type: 'select' },
-			options: ['small', 'medium', 'large']
-		}
 	}
-} satisfies Meta<Button>;
+} as Meta;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj;
 
-// More on writing stories with args: https://storybook.js.org/docs/svelte/writing-stories/args
-export const Primary: Story = {
+export const test: Story = {
 	args: {
-		label: 'Button'
-	}
-};
-
-export const Secondary: Story = {
-	args: {
-		label: 'Button'
-	}
-};
-
-export const Large: Story = {
-	args: {
-		size: 'large',
-		label: 'Button'
-	}
-};
-
-export const Small: Story = {
-	args: {
-		size: 'small',
-		label: 'Button'
+		label: 'test',
 	}
 };

@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/svelte';
 import { test } from 'vitest';
 
-import Button from './Button.svelte';
+import Button from '../Button.svelte';
 
 describe('Button component', () => {
 	test('shows the todo text when rendered', () => {

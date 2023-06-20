@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/svelte';
+import { render } from '@testing-library/svelte';
 
-import <FTName | pascalcase> from './<FTName | pascalcase>.svelte';
+import <FTName | pascalcase> from '../<FTName | pascalcase>.svelte';
 
 describe('<FTName | pascalcase> component', () => {
 	const <FTName | lowercasefirstchar>Props = {};
